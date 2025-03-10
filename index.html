@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DNCR Learn Dance At Home</title>
+    <link rel="stylesheet" href="home.css" />
+    <link rel="icon" href="./images/favicon.ico">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://unpkg.com/qr-code-styling/lib/index.umd.min.js"></script>
+    <script type="module" src="qrcode.js"></script>
+    <script src="./dist/bundle.js"></script>  <body>
+    <div class="header">
+      <div class="logo">
+        <img src="./images/DNCR.png" alt="" />
+      </div>
+      <ul class="navlist">
+        <li>HOME</li>
+        <li><a href="#programscroll">PROGRAMS</a></li>
+        <li><a href="#tutorial">TUTORIALS</a></li>
+        <li>ABOUT US</li>
+      </ul>
+      <div class="signupbutton">
+        <button class="signup" onclick="window.location.href='login.html'">
+          Join Now
+        </button>
+      </div>
+    </div>
+
+    <!-- main body starts here -->
+    <div class="main">
+      <video id="background-video" autoplay muted loop>
+        <source src="images/3044127-uhd_3840_2160_24fps.mp4" type="video/mp4" />
+      </video>
+      <div id="video-overlay"></div>
+      <div class="content">
+        <h1>DNCR</h1>
+        <h2>
+          Follow Your
+          <div class="strike">He</div>
+          ART
+        </h2>
+        <p>Dance Beyond Boundaries: DNCR Invites You to Move Freely</p>
+        <button
+          class="signup"
+          onclick="window.location.href='regestration.html'"
+        >
+          Register Now
+        </button>
+      </div>
+      <div class="tutorials-main" id="tutorial">
+        <h1 class="heading">Explore Our Dance Tutorials</h1>
+        <div class="tutorials-wrap">
+          <p class="slidebtn" id="backbtnTutorials">&lt;</p>
+          <div class="tutorials">
+            <div class="choreo-slider">
+              <span>
+                <img
+                  src="https://d1y3te8e8cfsj3.cloudfront.net/videos/I1EuSHZV3O7/thumbnail.jpg"
+                  alt=""
+                />
+              </span>
+              <span>
+                <img
+                  src="https://d1y3te8e8cfsj3.cloudfront.net/videos/4aImF5QWTJT/thumbnail.jpg"
+                  alt=""
+              /></span>
+            </div>
+            <div class="choreo-slider">
+              <span>
+                <img
+                  src="https://d1y3te8e8cfsj3.cloudfront.net/videos/PneKlDyb2Kf/thumbnail.jpg"
+                  alt=""
+              /></span>
+              <span>
+                <img
+                  src="https://d1y3te8e8cfsj3.cloudfront.net/videos/5nZN2pVfgqt/thumbnail.jpg"
+                  alt=""
+              /></span>
+            </div>
+          </div>
+          <p class="slidebtn" id="frontbtnTutorials">&gt;</p>
+        </div>
+        <div class="programs" id="programscroll">
+          <h1 class="heading">Explore programs</h1>
+          <div class="tutorials-wrap">
+            <p class="slidebtn" id="backbtnPrograms">&lt;</p>
+            <div class="tutorials">
+              <div class="choreo-slider">
+                <span
+                  ><img
+                    src="https://d1y3te8e8cfsj3.cloudfront.net/videos/TrvAeIrm2pxQ/thumbnail.jpg"
+                    alt=""
+                  />
+                </span>
+                <span
+                  ><img
+                    src="https://d1y3te8e8cfsj3.cloudfront.net/videos/nGvLKdOXkPBm/thumbnail.jpg"
+                    alt=""
+                /></span>
+              </div>
+              <div class="choreo-slider">
+                <span>
+                  <img
+                    src="https://d1y3te8e8cfsj3.cloudfront.net/videos/PneKlDyb2Kf/thumbnail.jpg"
+                    alt=""
+                /></span>
+                <span>
+                  <img
+                    src="https://d1y3te8e8cfsj3.cloudfront.net/videos/pGYldCZAXzA/thumbnail.jpg"
+                    alt=""
+                /></span>
+              </div>
+            </div>
+            <p class="slidebtn" id="frontbtnPrograms">&gt;</p>
+          </div>
+        </div>
+      </div>
+      <div class="pricing-container">
+        <h1 class="heading">Pricing</h1>
+        <div class="price-card">
+          <div class="days">
+            <p class="bold">Full Access 7</p>
+            <p class="bg">Weekly</p>
+          </div>
+          <div class="price-main">
+            <p class="price">₹400</p>
+            <p class="discount"><span class="strike">₹500 </span>Save 20%</p>
+          </div>
+          <div class="subscribe">
+            <button class="subscribe-btn" data-amount="400">Subscribe</button>
+          </div>
+        </div>
+        <div class="price-card">
+          <div class="days">
+            <p class="bold">Full Access 30</p>
+            <p class="bg">Monthly</p>
+          </div>
+          <div class="price-main">
+            <p class="price">₹840</p>
+            <p class="discount"><span class="strike">₹1200 </span>Save 30%</p>
+          </div>
+          <div class="subscribe">
+            <button class="subscribe-btn" data-amount="840">Subscribe</button>
+          </div>
+        </div>
+        <div class="price-card">
+          <div class="days">
+            <p class="bold">Full Access 180</p>
+            <p class="bg">Half Yearly</p>
+          </div>
+          <div class="price-main">
+            <p class="price">₹3600</p>
+            <p class="discount"><span class="strike">₹7200 </span>Save 50%</p>
+          </div>
+          <div class="subscribe">
+            <button class="subscribe-btn" data-amount="3600">Subscribe</button>
+          </div>
+        </div>
+        <div class="price-card">
+          <div class="days">
+            <p class="bold">Full Access 365</p>
+            <p class="bg">Yearly</p>
+          </div>
+          <div class="price-main">
+            <p class="price">₹5740</p>
+            <p class="discount"><span class="strike">₹14400 </span>Save 60%</p>
+          </div>
+          <div class="subscribe">
+            <button class="subscribe-btn" data-amount="5740">Subscribe</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- The Modal -->
+    <div id="qrModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Scan to Pay</h2>
+        <div id="qr-code"></div>
+        <button id="doneButton" class="done-btn">Done</button>
+      </div>
+    </div>
+
+    <!-- mainn body ends here -->
+    <!-- footer starts  here -->
+    <div class="footer">
+      <div class="footer-section-1">
+        <div class="logo">
+          <img src="./images/DNCR.png" alt="" />
+        </div>
+        <ul class="navlist">
+          <li>HOME</li>
+          <li>PROGRAMS</li>
+          <li>TUTORIALS</li>
+          <li>ABOUT US</li>
+        </ul>
+        <div class="icons">
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-linkedin-in"></i>
+          <i class="fa-brands fa-youtube"></i>
+        </div>
+      </div>
+      <hr />
+      <div class="footer-section-2">
+        <div class="footer-column-left">
+          <p class="head">CheckUs</p>
+        </div>
+        <div class="footer-center">
+          <div class="footer-collumn">
+            <p class="head">Quick Links</p>
+            <a href="">
+              <p>Chose Plan</p>
+            </a>
+          </div>
+          <div class="footer-collumn">
+            <p class="head">Legal</p>
+            <a href="">
+              <p>Terms & Condition</p>
+            </a>
+          </div>
+        </div>
+        <div class="footer-collumn-right">
+          <p class="head">Contact Us</p>
+          <a href="https://wa.me/7259932987" target="_blank">
+            <p><i class="fa-solid fa-mobile"></i>7259932987</p>
+          </a>
+          <a href="mailto:dncrheart@gmail.com" target="_blank">
+            <p><i class="fa-solid fa-envelope"></i>Email:dncrheart@gmail.com</p>
+          </a>
+        </div>
+      </div>
+      <p>© 2024-2024, DNCR.com</p>
+    </div>
+    <!-- footer ends here -->
+    <!-- script for image slider starts -->
+    <!-- script for Tutorials starts here -->
+    <script>
+      let scrollcontainer = document.querySelector(".tutorials");
+      let backbtn = document.getElementById("backbtnTutorials");
+      let nxtbtn = document.getElementById("frontbtnTutorials");
+
+      scrollcontainer.addEventListener("wheel", (evt) => {
+        evt.preventDefault();
+        scrollcontainer.scrollLeft += evt.deltaY;
+        scrollcontainer.style.scrollBehavior = "auto";
+      });
+      nxtbtn.addEventListener("click", () => {
+        scrollcontainer.style.scrollBehavior = "smooth";
+        scrollcontainer.scrollLeft += 545;
+      });
+      backbtn.addEventListener("click", () => {
+        scrollcontainer.scrollLeft -= 545;
+        scrollcontainer.style.scrollBehavior = "smooth";
+      });
+    </script>
+    <!-- scriptfor Tutorial slide ends heere -->
+    <!-- script for programs slider starts here -->
+    <script>
+      let scrollcontainerPrograms = document.querySelector(
+        ".programs .tutorials"
+      );
+      let backbtnprograms = document.getElementById("backbtnPrograms");
+      let frontbtnPrograms = document.getElementById("frontbtnPrograms");
+
+      scrollcontainerPrograms.addEventListener("wheel", (evt) => {
+        evt.preventDefault();
+        scrollcontainerPrograms.scrollLeft += evt.deltaY;
+        scrollcontainerPrograms.style.scrollBehavior = "auto";
+      });
+
+      backbtnprograms.addEventListener("click", () => {
+        scrollcontainerPrograms.scrollLeft -= 545;
+        scrollcontainerPrograms.style.scrollBehavior = "smooth";
+      });
+      frontbtnPrograms.addEventListener("click", () => {
+        scrollcontainerPrograms.scrollLeft += 545;
+        scrollcontainerPrograms.style.scrollBehavior = "smooth";
+      });
+    </script>
+    <!-- scripts for programs slider ends here -->
+  </body>
+</html>
